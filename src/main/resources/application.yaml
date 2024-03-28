@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;NON_KEYWORDS=USER
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+  jwt:
+    secret: "dnlwYzNoMWNheDFocmNmY3NkZ3FzNDllOGtuOTF0b21seTRzOXI2MndwNzB6anpmemw2a2s4cjVha253NmVvYw"
+    expiration-time: PT2H
+  mail:
+    username: 1wiresharkbeats@gmail.com
+    password: fqqf wduj cjyr cmwq
+
+    host: smtp.gmail.com
+    port: 587
+    properties:
+      mail:
+        debug: false
+        transport:
+          protocol: smtp
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    mvc:
+      throw-exception-if-no-handler-found: true
+
+
